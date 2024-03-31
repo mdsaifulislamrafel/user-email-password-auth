@@ -3,6 +3,7 @@ import auth from "../firebase/firebase.config";
 import { useState } from "react";
 import { FaEyeSlash } from "react-icons/fa";
 import { IoEye } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 const Register = () => {
@@ -67,6 +68,7 @@ const Register = () => {
                 {
                     success && <p className="text-green-500">{success}</p>
                 }
+                <p>Already you have register Place <Link to="/login">Login</Link></p>
             </div>
         </div>
     );
